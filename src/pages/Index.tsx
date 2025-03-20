@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Activity, BarChart3, Dumbbell, Heart, Plus, Trophy } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -66,27 +65,27 @@ const mockProgressData = {
 const mockActivities = [
   {
     id: "1",
-    type: "workout",
+    type: "workout" as const,
     title: "Completed Workout",
     description: "You completed Upper Body Strength workout",
     time: "Today, 9:30 AM",
-    icon: "check",
+    icon: "check" as const,
   },
   {
     id: "2",
-    type: "achievement",
+    type: "achievement" as const,
     title: "New Achievement",
     description: "Achieved 7-day workout streak",
     time: "Yesterday, 6:15 PM",
-    icon: "award",
+    icon: "award" as const,
   },
   {
     id: "3",
-    type: "record",
+    type: "record" as const,
     title: "New Personal Record",
     description: "Bench Press: 185 lbs",
     time: "2 days ago",
-    icon: "user",
+    icon: "user" as const,
   },
 ];
 
